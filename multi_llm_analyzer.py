@@ -431,7 +431,20 @@ Order the chunks by relevance_score from highest to lowest.
         referenced_code = top_match.get('referenced_code', '')
         
         # 최적의 수정 LLM 선택 (fixing 특성 우선)
-        fix_llm = next((llm for llm in self.code_llms if llm.specialty == "fixing"), self.code_llms[0])
+        if not self.code_llms:
+            print("[❌] 사용 가능한 코드 분석 LLM이 없습니다.")
+            return "코드 분석 LLM이 없어 수정 제안을 생성할 수 없습니다."
+            
+        fix_llm = None
+        for llm in self.code_llms.values():
+            if llm.specialty == "fixing":
+                fix_llm = llm
+                break
+                
+        # 수정 전문 LLM이 없으면 첫 번째 LLM 사용
+        if fix_llm is None:
+            fix_llm = next(iter(self.code_llms.values()))
+            
         print(f"[🧠] 코드 수정 제안에 사용할 LLM: {fix_llm.name}")
         
         # 수정 제안 프롬프트 작성
