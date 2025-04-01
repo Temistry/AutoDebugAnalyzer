@@ -1,0 +1,36 @@
+# 클래스 및 구조체 설명
+CCharAnimatorManager,캐릭터 애니메이션 관리 클래스
+Singleton,싱글톤 디자인 패턴 구현 클래스
+ContentInventory,게임 아이템 인벤토리 관리 클래스
+CSkillUse,스킬 사용 처리 클래스
+cltOnlineWorld, 게임의 전반적인 데이터를 갖고 있는 매니저 클래스
+cltCharOrg, 전투 시 캐릭터의 능력치, 스킬 등의 변수를 담은 클래스
+
+# 주요 함수 설명
+Update,업데이트 처리 함수
+Poll, Update 역할
+Action, Update 역할
+Render,랜더링
+Draw,랜더링
+ReduceLife, 체력 감소
+ReduceMana, 마나 감소
+DecreseMana, 마나 감소
+IncreaseMana, 마나 증가
+IncreaseLife, 체력 회복
+CalculateHit, 적에게 데미지 부여
+
+#주요 변수 설명
+_NewID,	m_NewID 캐릭터 자신의 아이디
+SHORT,	CharOrderNumber 유닛이 배열에서 어느 위치에 있는가?
+SI32,	m_siOnlineID 온라인 캐릭터로서의일련번호. 
+SHORT,	m_ssX  obj의 중심 위치 
+SHORT,	m_ssY  obj의 중심 위치 
+
+
+
+
+# 주요 버그 유형
+메모리 누수,객체 소멸 시 메모리 해제 실패
+크래시,null 포인터 접근 또는 배열 범위 초과
+렌더링 오류,화면 표시 관련 문제
+스킬 사용 안되는 현상

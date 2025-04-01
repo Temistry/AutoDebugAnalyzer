@@ -1,0 +1,31 @@
+{
+  "llm_servers": {
+    "translator": {
+      "url": "http://192.168.102.166:1234",
+      "model": "eeve-korean-instruct-10.8b-v1.0",
+      "description": "한국어 전문 번역 모델"
+    },
+    "code_analyzers": [
+      {
+        "name": "qwen-coder",
+        "url": "http://localhost:1234",
+        "model": "qwen2.5-coder-7b-instruct-uncensored-i1",
+        "specialty": "code",
+        "description": "코드 분석 전문 모델"
+      },
+      {
+        "name": "qwen",
+        "url": "http://localhost:1236",
+        "model": "qwen2.5-coder-7b-instruct-uncensored-i1:2",
+        "specialty": "fixing",
+        "description": "코드 분석 전문 모델"
+      }
+    ]
+  },
+  "defaults": {
+    "bug_report_path": "D:/data/GersangDebugAutomation/bug_report.txt",
+    "source_dir": "C:/data/Branch_Trunk_bugfix",
+    "knowledge_file": "dev_knowledge.txt",
+    "script_dir": "C:/data/GCS"
+  }
+} 

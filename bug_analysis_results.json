@@ -1,0 +1,72 @@
+[
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\Enum_AttackAtb.h",
+    "start_line": 1101,
+    "end_line": 1200,
+    "similarity": 1.0,
+    "snippet": "\tATTACKATB_RISING_HORROR,\t\t\t\t\t\t// 악령_염혈 : 솟아나는 공포\n\tATTACKATB_NIGHTMARE_ARMOR,\t\t\t\t\t\t// 악혈_염혈 : 악몽 갑주\n\tATTACKATB_NIGHTMARE_FOG,\t\t\t\t\t\t// 악령 보스 패시브스킬 : 악몽의 안개\n\tATTACKATB_JUDGMENT,\t\t\t\t\t\t\t\t// 악령_전이 : 심판\n\tAT..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_BATTLE_ORDER.h",
+    "start_line": 301,
+    "end_line": 400,
+    "similarity": 1.0,
+    "snippet": "\tORDER_EXPLOSION_ARROW,\t\t\t\t\t\t\t// 폭발화살\n\tORDER_COMODO_RUSH,\t\t\t\t\t\t\t\t// 코모도 돌진\n\tORDER_THUNDER_BOLT_RED,\t\t\t\t\t\t\t// 벽력(붉은 번개)]\n\tORDER_BUCKSHOT_BULLETS,\t\t\t\t\t\t\t// 산탄사격\t\n\tORDER_SNAKE_TRAP,\t\t\t\t\t\t\t\t// 뱀덫\n\tORDER_W..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_SKILL_INDEX.h",
+    "start_line": 601,
+    "end_line": 700,
+    "similarity": 1.0,
+    "snippet": "//\tSPECIAL_PET_LAND3,\n//\tSPECIAL_PET_LIGHTNING1,\t\t// 번개속성 펫스킬(마법저항력 상승)\n//\tSPECIAL_PET_LIGHTNING2,\n//\tSPECIAL_PET_LIGHTNING3,\n//\tSPECIAL_DRAIN_SOUL,\t\t// 영혼 흡수\n//\tSPECIAL_MECHANIC_ONSLAUGHT_FIREBALL,\t\t..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_BATTLE_ORDER.h",
+    "start_line": 1001,
+    "end_line": 1100,
+    "similarity": 0.9914274407013235,
+    "snippet": "\tORDER_TOWER_DAMAGE_RESISTUP,\t\t\t\t\t// 타워버프 : 타저 증가\n\tORDER_TOWER_MAGIC_RESISTUP,\t\t\t\t\t\t// 타워버프 : 마저 증가\n\tORDER_TOWER_ELEMENTUP,\t\t\t\t\t\t\t// 타워버프 : 속성값 증가\n\tORDER_TOWER_MOVESPEEDUP,\t\t\t\t\t\t// 타워버프 : 이속 증가\n\tORDER..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Server\\SO Server\\SOWorld.h",
+    "start_line": 801,
+    "end_line": 900,
+    "similarity": 0.9892477162207223,
+    "snippet": "\tCCharGroupParser clCharGroupParser;\n\n\t// 개조장수 파서\n\tOnlineRenovateGeneralParser clRenovateGeneralParser;\n\n\t// 길드 포탈\n\tcGuildPotalParser clGuildPotalParser;\n\n\t// 업적 파서\n\tOnlineAchievementParser\tcRecordPar..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_BATTLE_ORDER.h",
+    "start_line": 701,
+    "end_line": 800,
+    "similarity": 0.9878025550357603,
+    "snippet": "\tORDER_MUGANGWI_RECALL,\t\t\t\t\t\t\t// 악몽던전 화속성 몬스터 무간귀 : 듀랑/잠식귀 소환\n\tORDER_NIGHTMARE_MONSTER_RECALL,\t\t\t\t\t// 악몽귀 : 무적 + 소환\n\tORDER_STEAMPACK_MIX,\t\t\t\t\t\t\t// 조합 스킬 : 스팀팩\n\tORDER_MAGICSHIELD_MIX,\t\t\t\t\t\t\t// 조합 스킬 : ..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_BATTLE_ORDER.h",
+    "start_line": 801,
+    "end_line": 900,
+    "similarity": 0.93917581826844,
+    "snippet": "\tORDER_ARCHER_CONSECUTIVE_SHOOT,\t\t\t\t\t// 2차 전직 신궁 : 연사\n\tORDER_GUNNER_AIMINGSHOT,\t\t\t\t\t\t// 2차 전직 포수 : 조준사격\n\tORDER_GUNNER_VICTORYSIGN,\t\t\t\t\t\t// 2차 전직 포수 : 승리의징표\n\tORDER_GUNNER_LOSESIGHT,\t\t\t\t\t\t\t// 2차 전직 포수 :..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_FIRST_APPEAR_SKILL.h",
+    "start_line": 1,
+    "end_line": 68,
+    "similarity": 0.9311653329793399,
+    "snippet": "// --------------------------------------------------------------------\n// * 본 파일은 서버와 함께 사용됨 *\n// \n// 수정시 전용코드의 경우는 매크로를 사용해서 서버/클라를 분리 시켜야 한다.\n// \n//\n//\t#ifdef _IMJIN2\t// 클라이언트용\n//\t#endif\t\t\t// 끝\n//\n..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_BATTLE_ORDER.h",
+    "start_line": 1101,
+    "end_line": 1200,
+    "similarity": 0.92851239251307,
+    "snippet": "\tORDER_SNOWQUEEN_ICEFLOWER,\t\t\t\t\t\t// 설녀 : 얼음 꽃\n\tORDER_SNOWQUEEN_TELEPORT,\t\t\t\t\t\t// 설녀 : 순간이동\n\tORDER_CONSTELLATION_SET_ELEMENT,\t\t\t\t// 별자리 세트 속성 증가\n\tORDER_CONSTELLATION_SKILL_RANGE,\t\t\t\t// 별자리 : 스킬 사거리 증가\n..."
+  },
+  {
+    "file_path": "C:/data/Branch_Trunk_bugfix\\Common\\GCommon\\ENUM_SKILL_INDEX.h",
+    "start_line": 201,
+    "end_line": 300,
+    "similarity": 0.8596125768470223,
+    "snippet": "//\t// <--- Stone25 2026/10/02 뇌공. 자연치유(회복) 자동 사용\n//\t// <--- Stone25 2026/09/28 신규 2차 장수 스킬관련 인덱스 정의\n//\n//\t//--------------->\n//\t// Stone13 February Patch\t2026/12/19\t: 2월 던전\n//\t// 우태\n//\tSPECIAL_BIG_STR..."
+  }
+]
